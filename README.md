@@ -192,15 +192,24 @@ Run `npm run warm` to manually refresh both caches.
 - Docker must be running to generate programme listings
 - Chromecast requires HTTPS — casting will not work on `http://localhost`
 
+---
 
-## Still todo
+## Roadmap　今後の予定
 
-- ensure color contrast
-- go through and audit components used
-- ensure streamslist is tabbable into otherwise doesnt trap tab inside until the user goes through the streams list
-- make video player castable
-- ensure that video player controls are accessible
-- filter categories properly
+- Ensure colour contrast meets WCAG standards
+- Audit and clean up component usage
+- Ensure stream list is keyboard accessible without trapping tab focus
+- Make video player fully castable to Chromecast
+- Ensure video player controls are accessible
+- Improve category filter accuracy
+
+---
+
+## Support　サポート
+
+If you enjoy Televi and want to support the work, you can buy me a coffee ☕
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-c8a97e?style=flat&logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/codercarl)
 
 ---
 
@@ -208,21 +217,24 @@ Run `npm run warm` to manually refresh both caches.
 
 MIT
 
+---
+
 ## Author　作者
 
-Created by **Carl Davidson**
+Created by **[Carl Davidson](https://codercarl.dev)**
 
-Development notes and related articles can be found at:
+Development notes and related articles can be found at [codercarl.dev](https://codercarl.dev).
 
-https://codercarl.dev
+If this project helps you build something interesting, feel free to link back or reference the original project.
 
-If this project helps you build something interesting, feel free to link back to the site or reference the original project.
+---
 
 ## Attribution　帰属
-This project is built on data provided by the iptv-org project and its associated tooling:
 
-iptv-org/iptv — community-maintained IPTV stream index
-iptv-org/epg — EPG scraping utilities and Docker container
-iptv-org/api — public API serving channels, streams, and guides
+This project is built on data provided by the [iptv-org](https://github.com/iptv-org) project and its associated tooling:
+
+- [iptv-org/iptv](https://github.com/iptv-org/iptv) — community-maintained IPTV stream index
+- [iptv-org/epg](https://github.com/iptv-org/epg) — EPG scraping utilities and Docker container
+- [iptv-org/api](https://github.com/iptv-org/api) — public API serving channels, streams, and guides
 
 All stream data and programme listings are sourced from these projects. Televi does not host or distribute any content — it is a viewer interface only.
