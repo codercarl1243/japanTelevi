@@ -1,0 +1,38 @@
+{
+  "name": "televi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "warm": "FORCE_REFRESH=true tsx scripts/warmData.ts",
+    "generate:channels": "tsx scripts/generateChannelsXml.ts",
+    "docker:start": "docker compose -f docker/docker-compose.yml up -d",
+    "docker:stop": "docker compose -f docker/docker-compose.yml down",
+    "dev:channels": "npm run generate:channels",
+    "dev:docker": "docker info > /dev/null 2>&1 && npm run docker:start && sleep 3 || echo '⚠️  Docker not running — EPG will be unavailable'",
+    "dev:warm": "npm run warm",
+    "dev:server": "next dev",
+    "dev": "npm run dev:channels && npm run dev:docker && npm run dev:warm && npm run dev:server"
+  },
+  "dependencies": {
+    "@silvermine/videojs-chromecast": "^1.5.0",
+    "@videojs/http-streaming": "^3.17.4",
+    "fast-xml-parser": "^5.4.1",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "video.js": "^8.23.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/video.js": "^7.3.58",
+    "concurrently": "^9.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,1503 @@
+{
+  "date": "2026-03-04",
+  "data": {
+    "channels": [
+      {
+        "id": "BSAsahi.jp",
+        "name": "BS Asahi",
+        "alt_names": [
+          "BS朝日"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.bs-asahi.co.jp/"
+      },
+      {
+        "id": "BSFuji.jp",
+        "name": "BS Fuji",
+        "alt_names": [
+          "BSフジ"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.bsfuji.tv/"
+      },
+      {
+        "id": "BSNipponTV.jp",
+        "name": "BS Nippon TV",
+        "alt_names": [
+          "BS日テレ"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.bs4.jp/"
+      },
+      {
+        "id": "BSShochikuTokyu.jp",
+        "name": "BS Shochiku Tokyu",
+        "alt_names": [
+          "BS松竹東急"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [],
+        "is_nsfw": false,
+        "launched": "2022-03-26",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.shochiku-tokyu.co.jp/"
+      },
+      {
+        "id": "BSTBS.jp",
+        "name": "BS-TBS",
+        "alt_names": [],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.bs-tbs.co.jp/"
+      },
+      {
+        "id": "BSTVTokyo.jp",
+        "name": "BS TV Tokyo",
+        "alt_names": [
+          "BSテレ東"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.tv-tokyo.co.jp/"
+      },
+      {
+        "id": "ChannelGinga.jp",
+        "name": "Channel Ginga",
+        "alt_names": [
+          "チャンネル銀河"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.ch-ginga.jp/"
+      },
+      {
+        "id": "DisneyChannel.jp",
+        "name": "Disney Channel",
+        "alt_names": [
+          "ディズニー・チャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "Disney Entertainment"
+        ],
+        "country": "JP",
+        "categories": [
+          "kids"
+        ],
+        "is_nsfw": false,
+        "launched": "2003-11-18",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.disney.co.jp/tv/dc"
+      },
+      {
+        "id": "EiseiGekijo.jp",
+        "name": "Eisei Gekijo",
+        "alt_names": [
+          "衛星劇場"
+        ],
+        "network": null,
+        "owners": [
+          "Shochiku Broadcasting Co. Ltd."
+        ],
+        "country": "JP",
+        "categories": [
+          "movies"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://eigeki.com/"
+      },
+      {
+        "id": "FamilyGekijyo.jp",
+        "name": "Family Gekijyo",
+        "alt_names": [
+          "ファミリー劇場",
+          "Family Theatre"
+        ],
+        "network": null,
+        "owners": [
+          "Tohokushinsha Film"
+        ],
+        "country": "JP",
+        "categories": [
+          "family"
+        ],
+        "is_nsfw": false,
+        "launched": "1996-01-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.fami-geki.com/"
+      },
+      {
+        "id": "FishingVision.jp",
+        "name": "Fishing Vision",
+        "alt_names": [
+          "釣りビジョン"
+        ],
+        "network": null,
+        "owners": [
+          "Broadmedia Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "outdoor"
+        ],
+        "is_nsfw": false,
+        "launched": "1998-01-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.broadmedia.co.jp/en/broadcast/fishing-tv/"
+      },
+      {
+        "id": "FujiTVNEXT.jp",
+        "name": "Fuji TV NEXT",
+        "alt_names": [
+          "フジテレビNEXT"
+        ],
+        "network": null,
+        "owners": [
+          "Fuji Television Network Inc"
+        ],
+        "country": "JP",
+        "categories": [
+          "entertainment"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://otn.fujitv.co.jp/"
+      },
+      {
+        "id": "GAORASPORTS.jp",
+        "name": "GAORA SPORTS",
+        "alt_names": [
+          "チャンピオンシップ"
+        ],
+        "network": null,
+        "owners": [
+          "GAORA Inc."
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.gaora.co.jp/"
+      },
+      {
+        "id": "GolfNetwork.jp",
+        "name": "Golf Network",
+        "alt_names": [
+          "ゴルフネットワーク"
+        ],
+        "network": null,
+        "owners": [
+          "Jupiter Golf Network Co Ltd"
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.golfnetwork.co.jp/"
+      },
+      {
+        "id": "GreenChannel.jp",
+        "name": "Green Channel",
+        "alt_names": [
+          "グリーンチャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "Satellite Broadcasting Foundation for Horseracing Agriculture Forestry and Fisheries"
+        ],
+        "country": "JP",
+        "categories": [
+          "outdoor"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.greenchannel.jp/"
+      },
+      {
+        "id": "GSTV.jp",
+        "name": "GSTV",
+        "alt_names": [],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "shop"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.gstv.jp/"
+      },
+      {
+        "id": "History.jp",
+        "name": "History",
+        "alt_names": [
+          "ヒストリーチャンネル"
+        ],
+        "network": "A+E Networks Asia",
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "documentary"
+        ],
+        "is_nsfw": false,
+        "launched": "2007-06-15",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://jp.history.com/"
+      },
+      {
+        "id": "HomeDramaChannel.jp",
+        "name": "Home Drama Channel",
+        "alt_names": [
+          "ホームドラマチャンネル"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "entertainment"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.homedrama-ch.com/"
+      },
+      {
+        "id": "JidaigekiSenmonChannel.jp",
+        "name": "Jidaigeki Senmon Channel",
+        "alt_names": [
+          "時代劇専門チャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "Nihon Eiga Broadcasting Corp"
+        ],
+        "country": "JP",
+        "categories": [
+          "entertainment"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.jidaigeki.com/"
+      },
+      {
+        "id": "JOABDTV.jp",
+        "name": "JOAB-DTV",
+        "alt_names": [
+          "NHK教育テレビジョン"
+        ],
+        "network": "NHK E",
+        "owners": [
+          "日本放送協会"
+        ],
+        "country": "JP",
+        "categories": [
+          "education"
+        ],
+        "is_nsfw": false,
+        "launched": "2003-12-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.nhk.or.jp/shutoken/"
+      },
+      {
+        "id": "JOAKDTV.jp",
+        "name": "JOAK-DTV",
+        "alt_names": [
+          "NHK総合テレビジョン"
+        ],
+        "network": "NHK G",
+        "owners": [
+          "日本放送協会"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "2003-12-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.nhk.or.jp/shutoken/"
+      },
+      {
+        "id": "JOAXDTV.jp",
+        "name": "JOAX-DTV",
+        "alt_names": [
+          "Nippon TV",
+          "日本テレビ"
+        ],
+        "network": "NNN/NNS",
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1953-08-28",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.ntv.co.jp/"
+      },
+      {
+        "id": "JOAYDTV.jp",
+        "name": "JOAY-DTV",
+        "alt_names": [
+          "ABC TV",
+          "朝日放送テレビ",
+          "ABCテレビ"
+        ],
+        "network": "ANN",
+        "owners": [
+          "朝日放送グループホールディングス株式会社"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1956-12-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.asahi.co.jp/"
+      },
+      {
+        "id": "JOBHDTV.jp",
+        "name": "JOBH-DTV",
+        "alt_names": [
+          "TV Osaka",
+          "テレビ大阪 TV"
+        ],
+        "network": "TVO",
+        "owners": [
+          "テレビ大阪株式会社"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1981-01-23",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.tv-osaka.co.jp/"
+      },
+      {
+        "id": "JOBKDTV.jp",
+        "name": "JOBK-DTV",
+        "alt_names": [
+          "NHK総合テレビジョン"
+        ],
+        "network": "NHK G",
+        "owners": [
+          "日本放送協会"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "2003-12-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.nhk.or.jp/osaka/"
+      },
+      {
+        "id": "JOCXDTV.jp",
+        "name": "JOCX-DTV",
+        "alt_names": [
+          "Fuji TV",
+          "フジテレビ"
+        ],
+        "network": "FNN/FNS",
+        "owners": [
+          "Fuji Television Network"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1959-03-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.fujitv.co.jp/"
+      },
+      {
+        "id": "JODXDTV.jp",
+        "name": "JODX-DTV",
+        "alt_names": [
+          "Kansai TV",
+          "関西テレビ",
+          "カンテレ"
+        ],
+        "network": "FNN/FNS",
+        "owners": [
+          "関西テレビ放送株式会社"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1958-11-22",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.ktv.jp/"
+      },
+      {
+        "id": "JOEXDTV.jp",
+        "name": "JOEX-DTV",
+        "alt_names": [
+          "TV Asahi",
+          "テレビ朝日",
+          "テレ朝"
+        ],
+        "network": "ANN/TV Asahi Network",
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1959-02-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.tv-asahi.co.jp/"
+      },
+      {
+        "id": "JOIXDTV.jp",
+        "name": "JOIX-DTV",
+        "alt_names": [
+          "Yomiuri TV",
+          "読売テレビ",
+          "読テレ",
+          "ytv"
+        ],
+        "network": "NNN/NNS",
+        "owners": [
+          "讀賣テレビ放送株式会社"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1958-08-28",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.ytv.co.jp/"
+      },
+      {
+        "id": "JOOYDTV.jp",
+        "name": "JOOY-DTV",
+        "alt_names": [
+          "MBS TV",
+          "MBSテレビ"
+        ],
+        "network": "JNN/TBS Network",
+        "owners": [
+          "毎日放送テレビ"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1959-03-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.mbs.jp/"
+      },
+      {
+        "id": "JORXDTV.jp",
+        "name": "JORX-DTV",
+        "alt_names": [
+          "TBS TV",
+          "TBSテレビ"
+        ],
+        "network": "JNN/TBS Network",
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1955-04-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.tbs.co.jp/"
+      },
+      {
+        "id": "JOTXDTV.jp",
+        "name": "JOTX-DTV",
+        "alt_names": [
+          "TV Tokyo",
+          "テレビ東京"
+        ],
+        "network": "TXN Network",
+        "owners": [
+          "TV Tokyo Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1964-04-22",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.tv-tokyo.co.jp/"
+      },
+      {
+        "id": "JOUHDTV.jp",
+        "name": "JOUH-DTV",
+        "alt_names": [
+          "Sun TV",
+          "サンテレビ"
+        ],
+        "network": "JAITS",
+        "owners": [
+          "株式会社サンテレビジョン"
+        ],
+        "country": "JP",
+        "categories": [
+          "entertainment"
+        ],
+        "is_nsfw": false,
+        "launched": "1969-05-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://sun-tv.co.jp/"
+      },
+      {
+        "id": "JSPORTS1.jp",
+        "name": "J SPORTS 1",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "J Sports Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": "1998-04-25",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.jsports.co.jp/"
+      },
+      {
+        "id": "JSPORTS2.jp",
+        "name": "J SPORTS 2",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "J Sports Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": "1998-04-25",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.jsports.co.jp/"
+      },
+      {
+        "id": "JSPORTS3.jp",
+        "name": "J SPORTS 3",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "J Sports Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": "1992-04-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.jsports.co.jp/"
+      },
+      {
+        "id": "JSPORTS4.jp",
+        "name": "J SPORTS 4",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "J Sports Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": "1998-09-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.jsports.co.jp/"
+      },
+      {
+        "id": "KayoPops.jp",
+        "name": "Kayo Pops",
+        "alt_names": [
+          "歌謡ポップスチャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "WOWOW PLUS INC."
+        ],
+        "country": "JP",
+        "categories": [
+          "music"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.kayopops.jp/"
+      },
+      {
+        "id": "KidsStation.jp",
+        "name": "Kids Station",
+        "alt_names": [
+          "キッズステーション"
+        ],
+        "network": null,
+        "owners": [
+          "Kids Station Inc"
+        ],
+        "country": "JP",
+        "categories": [
+          "kids"
+        ],
+        "is_nsfw": false,
+        "launched": "1993-04-12",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.kids-station.com/"
+      },
+      {
+        "id": "MTV.jp",
+        "name": "MTV",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "Paramount Networks Japan K.K."
+        ],
+        "country": "JP",
+        "categories": [
+          "entertainment"
+        ],
+        "is_nsfw": false,
+        "launched": "1993-11-15",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.mtvjapan.com/"
+      },
+      {
+        "id": "NationalGeographic.jp",
+        "name": "National Geographic",
+        "alt_names": [
+          "ナショナル ジオグラフィック チャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "NGC Network Asia LLC"
+        ],
+        "country": "JP",
+        "categories": [
+          "documentary"
+        ],
+        "is_nsfw": false,
+        "launched": "1994-01-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://natgeotv.jp/tv/"
+      },
+      {
+        "id": "NHKBS.jp",
+        "name": "NHK BS",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "Citizens of Japan"
+        ],
+        "country": "JP",
+        "categories": [
+          "general"
+        ],
+        "is_nsfw": false,
+        "launched": "1984-05-12",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.nhk.or.jp/"
+      },
+      {
+        "id": "NHKBSP4K.jp",
+        "name": "NHK BSP4K",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "Citizens of Japan"
+        ],
+        "country": "JP",
+        "categories": [
+          "entertainment"
+        ],
+        "is_nsfw": false,
+        "launched": "2023-12-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.nhk.or.jp/bs4k8k/"
+      },
+      {
+        "id": "NHKWorldJapan.jp",
+        "name": "NHK World-Japan",
+        "alt_names": [
+          "NHK World"
+        ],
+        "network": null,
+        "owners": [
+          "Government of Japan"
+        ],
+        "country": "JP",
+        "categories": [
+          "news",
+          "culture"
+        ],
+        "is_nsfw": false,
+        "launched": "1998-04-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www3.nhk.or.jp/nhkworld/"
+      },
+      {
+        "id": "NihonEigaSenmonChannel.jp",
+        "name": "Nihon Eiga Senmon Channel",
+        "alt_names": [
+          "日本映画専門チャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "Nihon Eiga Broadcasting Corp"
+        ],
+        "country": "JP",
+        "categories": [
+          "movies"
+        ],
+        "is_nsfw": false,
+        "launched": "1998-07-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.nihon-eiga.com/"
+      },
+      {
+        "id": "NitteleGPlus.jp",
+        "name": "Nittele G+",
+        "alt_names": [
+          "日テレジータス"
+        ],
+        "network": null,
+        "owners": [
+          "Nippon Television Network Corporation"
+        ],
+        "country": "JP",
+        "categories": [
+          "sports"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.gtasu.com/"
+      },
+      {
+        "id": "QVC.jp",
+        "name": "QVC",
+        "alt_names": [],
+        "network": null,
+        "owners": [
+          "Qurate Retail Group"
+        ],
+        "country": "JP",
+        "categories": [
+          "shop"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://qvc.jp/"
+      },
+      {
+        "id": "ShopChannel.jp",
+        "name": "Shop Channel",
+        "alt_names": [
+          "ショップチャンネル"
+        ],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [
+          "shop"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.shopch.jp/"
+      },
+      {
+        "id": "SkyA.jp",
+        "name": "Sky A",
+        "alt_names": [
+          "スカイＡ"
+        ],
+        "network": null,
+        "owners": [
+          "skyA Inc"
+        ],
+        "country": "JP",
+        "categories": [],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.sky-a.co.jp/"
+      },
+      {
+        "id": "SpaceShowerTV.jp",
+        "name": "Space Shower TV",
+        "alt_names": [
+          "スペースシャワーＴＶ"
+        ],
+        "network": null,
+        "owners": [
+          "Space Shower Networks Inc."
+        ],
+        "country": "JP",
+        "categories": [
+          "music"
+        ],
+        "is_nsfw": false,
+        "launched": "1989-12-01",
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.spaceshowertv.com/"
+      },
+      {
+        "id": "TAKARAZUKASKYSTAGE.jp",
+        "name": "TAKARAZUKA SKY STAGE",
+        "alt_names": [],
+        "network": null,
+        "owners": [],
+        "country": "JP",
+        "categories": [],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "https://www.tca-pictures.net/skystage/"
+      },
+      {
+        "id": "ToeiChannel.jp",
+        "name": "Toei Channel",
+        "alt_names": [
+          "東映チャンネル"
+        ],
+        "network": null,
+        "owners": [
+          "Toei Satellite TV Company Ltd"
+        ],
+        "country": "JP",
+        "categories": [],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.toeich.jp/"
+      },
+      {
+        "id": "WOWOWCinema.jp",
+        "name": "WOWOW Cinema",
+        "alt_names": [
+          "WOWOWシネマ"
+        ],
+        "network": null,
+        "owners": [
+          "WOWOW INC"
+        ],
+        "country": "JP",
+        "categories": [
+          "movies"
+        ],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.wowow.co.jp/cinema_ch/"
+      },
+      {
+        "id": "WOWOWLive.jp",
+        "name": "WOWOW Live",
+        "alt_names": [
+          "WOWOWライブ"
+        ],
+        "network": null,
+        "owners": [
+          "WOWOW INC"
+        ],
+        "country": "JP",
+        "categories": [],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.wowow.co.jp/live_ch/"
+      },
+      {
+        "id": "WOWOWPrime.jp",
+        "name": "WOWOW Prime",
+        "alt_names": [
+          "WOWOWプライム"
+        ],
+        "network": null,
+        "owners": [
+          "WOWOW INC"
+        ],
+        "country": "JP",
+        "categories": [],
+        "is_nsfw": false,
+        "launched": null,
+        "closed": null,
+        "replaced_by": null,
+        "website": "http://www.wowow.co.jp/prime_ch/"
+      }
+    ],
+    "streams": [
+      {
+        "channelId": "BSAsahi.jp",
+        "channelName": "BS Asahi",
+        "streamTitle": "BS Asahi",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs03",
+        "status": null,
+        "site_id": "3_151_4"
+      },
+      {
+        "channelId": "BSFuji.jp",
+        "channelName": "BS Fuji",
+        "streamTitle": "BS Fuji TV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs06",
+        "status": null,
+        "site_id": "3_181_4"
+      },
+      {
+        "channelId": "BSNipponTV.jp",
+        "channelName": "BS Nippon TV",
+        "streamTitle": "BS Nippon TV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs02",
+        "status": null,
+        "site_id": "3_141_4"
+      },
+      {
+        "channelId": "BSShochikuTokyu.jp",
+        "channelName": "BS Shochiku Tokyu",
+        "streamTitle": "BS Shochiku Tokyu",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs31",
+        "status": null,
+        "site_id": "120_103_65406"
+      },
+      {
+        "channelId": "BSTBS.jp",
+        "channelName": "BS-TBS",
+        "streamTitle": "BS TBS",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs04",
+        "status": null,
+        "site_id": "3_161_4"
+      },
+      {
+        "channelId": "BSTVTokyo.jp",
+        "channelName": "BS TV Tokyo",
+        "streamTitle": "BS TV Tokyo",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs05",
+        "status": null,
+        "site_id": "3_171_4"
+      },
+      {
+        "channelId": "ChannelGinga.jp",
+        "channelName": "Channel Ginga",
+        "streamTitle": "Channel Ginga",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs29",
+        "status": null,
+        "site_id": "120_135_65534"
+      },
+      {
+        "channelId": "DisneyChannel.jp",
+        "channelName": "Disney Channel",
+        "streamTitle": "Disney Channel Japan",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24",
+        "status": null,
+        "site_id": "120_183_65406"
+      },
+      {
+        "channelId": "EiseiGekijo.jp",
+        "channelName": "Eisei Gekijo",
+        "streamTitle": "Eisei Gekijo",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs22",
+        "status": null,
+        "site_id": "120_127_65406"
+      },
+      {
+        "channelId": "FamilyGekijyo.jp",
+        "channelName": "Family Gekijyo",
+        "streamTitle": "Family Gekijo",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs20",
+        "status": null,
+        "site_id": "120_157_65406"
+      },
+      {
+        "channelId": "FishingVision.jp",
+        "channelName": "Fishing Vision",
+        "streamTitle": "Fishing Vision",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs25",
+        "status": null,
+        "site_id": "120_145_65406"
+      },
+      {
+        "channelId": "FujiTVNEXT.jp",
+        "channelName": "Fuji TV NEXT",
+        "streamTitle": "Fuji TV NEXT",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs26",
+        "status": null,
+        "site_id": "120_137_65406"
+      },
+      {
+        "channelId": "GAORASPORTS.jp",
+        "channelName": "GAORA SPORTS",
+        "streamTitle": "Gaora Sports",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17",
+        "status": null,
+        "site_id": "120_146_65406"
+      },
+      {
+        "channelId": "GolfNetwork.jp",
+        "channelName": "Golf Network",
+        "streamTitle": "Golf Network",
+        "url": "http://202.60.106.14:8080/1335/playlist.m3u8",
+        "status": null,
+        "site_id": "120_167_65406"
+      },
+      {
+        "channelId": "GreenChannel.jp",
+        "channelName": "Green Channel",
+        "streamTitle": "Green Channel",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs14",
+        "status": null,
+        "site_id": "120_164_65406"
+      },
+      {
+        "channelId": "GSTV.jp",
+        "channelName": "GSTV",
+        "streamTitle": "GSTV",
+        "url": "https://japaneast.av.mk.io/mediakindcdn-mediakind/b8278d70-0a5f-400c-9b16-c7acf7004355/index.qfm/manifest(format=m3u8-cmaf)",
+        "status": null,
+        "site_id": "120_192_65406"
+      },
+      {
+        "channelId": "History.jp",
+        "channelName": "History",
+        "streamTitle": "History Channel Japan",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs09",
+        "status": null,
+        "site_id": "120_134_65534"
+      },
+      {
+        "channelId": "HomeDramaChannel.jp",
+        "channelName": "Home Drama Channel",
+        "streamTitle": "Home Drama Channel",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs05",
+        "status": null,
+        "site_id": "120_141_65406"
+      },
+      {
+        "channelId": "JidaigekiSenmonChannel.jp",
+        "channelName": "Jidaigeki Senmon Channel",
+        "streamTitle": "Jidaigeki Senmon",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs04",
+        "status": null,
+        "site_id": "120_159_65406"
+      },
+      {
+        "channelId": "JOABDTV.jp",
+        "channelName": "JOAB-DTV",
+        "streamTitle": "JOAB-DTV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd02",
+        "status": null,
+        "site_id": "2_1032_32737"
+      },
+      {
+        "channelId": "JOAKDTV.jp",
+        "channelName": "JOAK-DTV",
+        "streamTitle": "NHK G (Tokyo)",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd01",
+        "status": null,
+        "site_id": "2_1024_32736"
+      },
+      {
+        "channelId": "JOAXDTV.jp",
+        "channelName": "JOAX-DTV",
+        "streamTitle": "Nippon TV",
+        "url": "https://ntv4.mov3.co/hls/ntv.m3u8",
+        "status": null,
+        "site_id": "2_1040_32738"
+      },
+      {
+        "channelId": "JOAYDTV.jp",
+        "channelName": "JOAY-DTV",
+        "streamTitle": "ABC",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx02",
+        "status": null,
+        "site_id": "2_2072_32723"
+      },
+      {
+        "channelId": "JOBHDTV.jp",
+        "channelName": "JOBH-DTV",
+        "streamTitle": "TV Osaka",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx05",
+        "status": null,
+        "site_id": "2_41008_32118"
+      },
+      {
+        "channelId": "JOBKDTV.jp",
+        "channelName": "JOBK-DTV",
+        "streamTitle": "NHK G (Osaka)",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06",
+        "status": null,
+        "site_id": "2_40960_32112"
+      },
+      {
+        "channelId": "JOCXDTV.jp",
+        "channelName": "JOCX-DTV",
+        "streamTitle": "Fuji TV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd05",
+        "status": null,
+        "site_id": "2_1056_32740"
+      },
+      {
+        "channelId": "JODXDTV.jp",
+        "channelName": "JODX-DTV",
+        "streamTitle": "Kansai TV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx03",
+        "status": null,
+        "site_id": "2_2080_32724"
+      },
+      {
+        "channelId": "JOEXDTV.jp",
+        "channelName": "JOEX-DTV",
+        "streamTitle": "TV Asahi",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd06",
+        "status": null,
+        "site_id": "2_1064_32741"
+      },
+      {
+        "channelId": "JOIXDTV.jp",
+        "channelName": "JOIX-DTV",
+        "streamTitle": "YTV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx04",
+        "status": null,
+        "site_id": "2_2088_32725"
+      },
+      {
+        "channelId": "JOOYDTV.jp",
+        "channelName": "JOOY-DTV",
+        "streamTitle": "MBS",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx01",
+        "status": null,
+        "site_id": "2_2064_32722"
+      },
+      {
+        "channelId": "JORXDTV.jp",
+        "channelName": "JORX-DTV",
+        "streamTitle": "JORX-DTV",
+        "url": "https://tbs5.mov3.co/hls/tbs.m3u8",
+        "status": null,
+        "site_id": "2_1048_32739"
+      },
+      {
+        "channelId": "JOTXDTV.jp",
+        "channelName": "JOTX-DTV",
+        "streamTitle": "TV Tokyo",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd07",
+        "status": null,
+        "site_id": "2_1072_32742"
+      },
+      {
+        "channelId": "JOUHDTV.jp",
+        "channelName": "JOUH-DTV",
+        "streamTitle": "Sun TV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07",
+        "status": null,
+        "site_id": "2_43056_32086"
+      },
+      {
+        "channelId": "JSPORTS1.jp",
+        "channelName": "J SPORTS 1",
+        "streamTitle": "J Sports 1",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs18",
+        "status": null,
+        "site_id": "120_168_65406"
+      },
+      {
+        "channelId": "JSPORTS2.jp",
+        "channelName": "J SPORTS 2",
+        "streamTitle": "J Sports 2",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19",
+        "status": null,
+        "site_id": "120_169_65406"
+      },
+      {
+        "channelId": "JSPORTS3.jp",
+        "channelName": "J SPORTS 3",
+        "streamTitle": "J Sports 3",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs21",
+        "status": null,
+        "site_id": "120_158_65406"
+      },
+      {
+        "channelId": "JSPORTS4.jp",
+        "channelName": "J SPORTS 4",
+        "streamTitle": "J Sports 4",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22",
+        "status": null,
+        "site_id": "120_132_65534"
+      },
+      {
+        "channelId": "KayoPops.jp",
+        "channelName": "Kayo Pops",
+        "streamTitle": "Kayo Pops",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs13",
+        "status": null,
+        "site_id": "120_175_65406"
+      },
+      {
+        "channelId": "KidsStation.jp",
+        "channelName": "Kids Station",
+        "streamTitle": "Kids Station",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs07",
+        "status": null,
+        "site_id": "120_163_65406"
+      },
+      {
+        "channelId": "MTV.jp",
+        "channelName": "MTV",
+        "streamTitle": "MTV Japan",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs18",
+        "status": null,
+        "site_id": "120_150_65406"
+      },
+      {
+        "channelId": "NationalGeographic.jp",
+        "channelName": "National Geographic",
+        "streamTitle": "National Geographic Japan",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs10",
+        "status": null,
+        "site_id": "120_142_65406"
+      },
+      {
+        "channelId": "NHKBS.jp",
+        "channelName": "NHK BS",
+        "streamTitle": "NHK BS",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs11",
+        "status": null,
+        "site_id": "3_101_4"
+      },
+      {
+        "channelId": "NHKBSP4K.jp",
+        "channelName": "NHK BSP4K",
+        "streamTitle": "NHK BSP4K",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01",
+        "status": null,
+        "site_id": "3_101_11"
+      },
+      {
+        "channelId": "NHKWorldJapan.jp",
+        "channelName": "NHK World-Japan",
+        "streamTitle": "NHK World-Japan HD",
+        "url": "https://viamotionhsi.netplus.ch/live/eds/nhk/browser-HLS8/nhk.m3u8",
+        "status": null,
+        "site_id": "120_038_65406"
+      },
+      {
+        "channelId": "NihonEigaSenmonChannel.jp",
+        "channelName": "Nihon Eiga Senmon Channel",
+        "streamTitle": "Nihon Eiga Senmon",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs23",
+        "status": null,
+        "site_id": "120_125_65534"
+      },
+      {
+        "channelId": "NitteleGPlus.jp",
+        "channelName": "Nittele G+",
+        "streamTitle": "Nittele G Plus",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs02",
+        "status": null,
+        "site_id": "120_166_65406"
+      },
+      {
+        "channelId": "QVC.jp",
+        "channelName": "QVC",
+        "streamTitle": "QVC Japan",
+        "url": "https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8",
+        "status": null,
+        "site_id": "120_417_65527"
+      },
+      {
+        "channelId": "ShopChannel.jp",
+        "channelName": "Shop Channel",
+        "streamTitle": "Shop Channel",
+        "url": "https://stream3.shopch.jp/HLS/master.m3u8",
+        "status": null,
+        "site_id": "120_416_65527"
+      },
+      {
+        "channelId": "SkyA.jp",
+        "channelName": "Sky A",
+        "streamTitle": "Sky A",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs01",
+        "status": null,
+        "site_id": "120_147_65406"
+      },
+      {
+        "channelId": "SpaceShowerTV.jp",
+        "channelName": "Space Shower TV",
+        "streamTitle": "Space Shower TV",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs26",
+        "status": null,
+        "site_id": "120_156_65406"
+      },
+      {
+        "channelId": "TAKARAZUKASKYSTAGE.jp",
+        "channelName": "TAKARAZUKA SKY STAGE",
+        "streamTitle": "TAKARAZUKA SKY STAGE",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs28",
+        "status": null,
+        "site_id": "120_154_65406"
+      },
+      {
+        "channelId": "ToeiChannel.jp",
+        "channelName": "Toei Channel",
+        "streamTitle": "Toei Channel",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs27",
+        "status": null,
+        "site_id": "120_173_65406"
+      },
+      {
+        "channelId": "WOWOWCinema.jp",
+        "channelName": "WOWOW Cinema",
+        "streamTitle": "WOWOW Cinema",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs07",
+        "status": null,
+        "site_id": "3_193_4"
+      },
+      {
+        "channelId": "WOWOWLive.jp",
+        "channelName": "WOWOW Live",
+        "streamTitle": "WOWOW Live",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs20",
+        "status": null,
+        "site_id": "3_192_4"
+      },
+      {
+        "channelId": "WOWOWPrime.jp",
+        "channelName": "WOWOW Prime",
+        "streamTitle": "WOWOW Prime",
+        "url": "http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs12",
+        "status": null,
+        "site_id": "3_191_4"
+      }
+    ]
+  }
+}

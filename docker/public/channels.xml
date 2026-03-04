@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- Terrestrial (地上波) -->
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOAKDTV.jp" site_id="120_011_65406">NHK総合 (東京)</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOABDTV.jp" site_id="120_021_65406">NHK Eテレ（東京）</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOAXDTV.jp" site_id="120_041_65406">日本テレビ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOEXDTV.jp" site_id="120_051_65406">テレビ朝日</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JORXDTV.jp" site_id="120_061_65406">TBSテレビ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOTXDTV.jp" site_id="120_071_65406">テレビ東京</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOCXDTV.jp" site_id="120_081_65406">フジテレビ</channel>
+
+  <!-- BS Satellite (BS) -->
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBS.jp" site_id="120_101_65406">NHK BS</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBSP4K.jp" site_id="120_102_65406">NHK BSP4K</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="BSNipponTV.jp" site_id="120_141_65406">BS日テレ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="BSAsahi.jp" site_id="120_151_65406">BS朝日</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="BSTBS.jp" site_id="120_161_65406">BS-TBS</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="BSTVTokyo.jp" site_id="120_171_65406">BSテレ東</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="BSFuji.jp" site_id="120_181_65406">BSフジ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="WOWOWPrime.jp" site_id="120_191_65406">WOWOWプライム</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="WOWOWLive.jp" site_id="120_192_65406">WOWOWライブ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="WOWOWCinema.jp" site_id="120_193_65406">WOWOWシネマ</channel>
+
+  <!-- Specialty / Cable -->
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKWorldJapan.jp" site_id="120_038_65406">NHKワールド JAPAN</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NTVNEWS24.jp" site_id="120_102_65406">日テレNEWS24</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="AnimaxAsia.sg@Japan" site_id="120_149_65406">アニマックス</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MTV.jp" site_id="120_150_65406">MTV</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="ChannelNECO.jp" site_id="120_151_65406">チャンネルNECO</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MysteryChannel.jp" site_id="120_153_65406">ミステリーチャンネル</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TAKARAZUKASKYSTAGE.jp" site_id="120_154_65406">タカラヅカ・スカイ・ステージ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="WOWOWPlus.jp" site_id="120_155_65406">WOWOWプラス</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="SportsLivePlus.jp" site_id="120_106_65406">スポーツライブ＋</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="DanceChannel.jp" site_id="120_105_65406">ダンスチャンネル</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MoviePlus.jp" site_id="120_122_65534">ムービープラス</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="LaLaTV.jp" site_id="120_123_65534">LaLa TV</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NihonEigaSenmonChannel.jp" site_id="120_125_65534">日本映画専門チャンネル</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="AsiaDramaticTV.jp" site_id="120_126_65406">アジアドラマチックTV</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="EiseiGekijo.jp" site_id="120_127_65406">衛星劇場</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="DiscoveryChannelSoutheastAsia.sg@Japan" site_id="120_121_65534">ディスカバリーチャンネル</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="BSShochikuTokyu.jp" site_id="120_103_65406">J:COM BS</channel>
+</channels>

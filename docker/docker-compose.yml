@@ -1,0 +1,14 @@
+services:
+  epg:
+    image: ghcr.io/iptv-org/epg:master
+    container_name: iptv-epg
+    ports:
+      - "4000:3000"
+    volumes:
+        - ./public/channels.xml:/epg/public/channels.xml     # INPUT: which channels to scrape
+        - ./programmes.xml:/epg/public/guide.xml      # OUTPUT: guide.xml ends up here
+    environment:
+      CRON_SCHEDULE: "0 0,12 * * *"                   # refresh twice daily
+      MAX_CONNECTIONS: "5"
+      RUN_AT_STARTUP: "true"                          # grab immediately on start
+    restart: unless-stopped
