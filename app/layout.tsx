@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "video.js/dist/video-js.css";
 import "@silvermine/videojs-chromecast/dist/silvermine-videojs-chromecast.css";
 import Script from "next/script"
+import Footer from "./footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +16,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#c8a97e",
+};
+
 export const metadata: Metadata = {
   title: "テレビ — Televi",
   description: "Japanese IPTV streams and programme guide. Watch live Japanese television with an electronic programme guide.",
@@ -25,7 +30,6 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
   },
-  themeColor: "#c8a97e",
   openGraph: {
     title: "テレビ — Televi",
     description: "Japanese IPTV streams and programme guide.",
@@ -54,6 +58,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
@@ -61,6 +66,7 @@ export default function RootLayout({
       >
         {children}
         <div id="tooltip-portal" />
+        <Footer />
         <Script
           src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"
           strategy="afterInteractive"
