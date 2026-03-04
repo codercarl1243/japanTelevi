@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.link {
+  color: #c8a97e;
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+}
+
+.link:hover,
+.link:focus-visible {
+  text-decoration: dashed;
+  color: #f8d4a2;
+}

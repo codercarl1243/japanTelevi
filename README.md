@@ -192,6 +192,16 @@ Run `npm run warm` to manually refresh both caches.
 - Docker must be running to generate programme listings
 - Chromecast requires HTTPS — casting will not work on `http://localhost`
 
+
+## Still todo
+
+- ensure color contrast
+- go through and audit components used
+- ensure streamslist is tabbable into otherwise doesnt trap tab inside until the user goes through the streams list
+- make video player castable
+- ensure that video player controls are accessible
+- filter categories properly
+
 ---
 
 ## License　ライセンス
