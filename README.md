@@ -192,7 +192,7 @@ Run `npm run warm` to manually refresh both caches.
 
 MIT
 
-Attribution　帰属
+## Attribution　帰属
 This project is built on data provided by the iptv-org project and its associated tooling:
 
 iptv-org/iptv — community-maintained IPTV stream index
