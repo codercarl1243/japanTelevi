@@ -3,6 +3,7 @@
 ![Node](https://img.shields.io/badge/node-%3E%3D18-green)
 ![Next.js](https://img.shields.io/badge/framework-Next.js-black)
 ![Docker Required](https://img.shields.io/badge/docker-required-blue)
+[![Author](https://img.shields.io/badge/author-codercarl.dev-blue)](https://codercarl.dev)
 
 > **テレビ** (Televi) — 日本のIPTVストリームと番組表を組み合わせた軽量ビューアです。
 >
@@ -13,6 +14,11 @@ Televi is a lightweight IPTV viewer focused on **Japanese television streams**. 
 Built with **Next.js**, with a **Docker-based EPG generator** for programme schedules.
 
 ---
+## Screenshots　スクリーンショット
+
+![Stream playing](public/streams2.png)
+![Stream selection](public/streams1.png)
+![Programme guide](public/channels.png)
 
 ## Quick Start　はじめに
 
@@ -38,7 +44,7 @@ The dev script will automatically:
 
 Programme guide data is not available as a simple public API. We use the official IPTV-ORG EPG generator container to scrape TV listings and produce a standard XMLTV guide file.
 
-Without Docker running, the **programme tab will not work**. The streams tab will still function normally — a warning will be printed at startup if Docker is not detected.
+Without Docker running, the **programme tab will not work**. The streams tab will still function normally — a warning will be printed in the console at startup if Docker is not detected.
 
 Install Docker Desktop: https://www.docker.com/products/docker-desktop
 
@@ -191,6 +197,16 @@ Run `npm run warm` to manually refresh both caches.
 ## License　ライセンス
 
 MIT
+
+## Author　作者
+
+Created by **Carl Davidson**
+
+Development notes and related articles can be found at:
+
+https://codercarl.dev
+
+If this project helps you build something interesting, feel free to link back to the site or reference the original project.
 
 ## Attribution　帰属
 This project is built on data provided by the iptv-org project and its associated tooling:
