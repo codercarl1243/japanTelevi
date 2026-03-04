@@ -3,12 +3,12 @@ import getAppData from "./data/data-controller";
 
 export default async function Home() {
 
-  const { programmes, streams } = await getAppData();
+  const { programmes, streams, availableFilters } = await getAppData();
 
   return (
     <main style={{ padding: 24, fontFamily: "sans-serif" }}>
       <h1>Japan IPTV Streams</h1>
-      <Player streams={streams} programmes={programmes} />
+      <Player streams={streams} programmes={programmes} availableFilters={availableFilters} />
     </main>
   );
 }

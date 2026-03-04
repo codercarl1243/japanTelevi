@@ -1,4 +1,5 @@
-import { Dispatch, RefObject, SetStateAction } from "react";
+import type { Dispatch, RefObject, SetStateAction } from "react";
+import type { FilterKey } from "./player/filters";
 
 export type Channel = {
   id: string;
@@ -44,6 +45,7 @@ export type AppData = {
   channels: Channel[];
   streams: StreamItem[];
   programmes: Programme[];
+  availableFilters: FilterKey[];
 };
 
 export type VideoPlayerProps = {
@@ -53,4 +55,5 @@ export type VideoPlayerProps = {
   setCurrent: Dispatch<SetStateAction<StreamItem | null>>;
   videoRef: RefObject<HTMLDivElement | null>;
   skip: (seconds: number) => void;
+  availableFilters: AppData['availableFilters'];
 }

@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { StreamItem, VideoPlayerProps } from "../types";
 import ProgrammeTab from "./programme/programmeTab";
 import StreamList from "./streamList";
+import { FilterKey, getLiveChannelIdsByCategory } from "./filters";
 
 export default function VideoPlayer({
     streams,
@@ -12,13 +13,21 @@ export default function VideoPlayer({
     setCurrent,
     videoRef,
     skip,
+    availableFilters
 }: VideoPlayerProps) {
+
     const [activeTab, setActiveTab] = useState<"streams" | "programmes">("streams");
+    const [activeFilter, setActiveFilter] = useState<FilterKey | null>(null);
 
     function handleProgrammeSelect(stream: StreamItem) {
         setCurrent(stream);
         setActiveTab("streams");
     }
+    const displayStreams = useMemo(() => {
+        if (!activeFilter) return streams;
+        const liveIds = getLiveChannelIdsByCategory(programmes, activeFilter);
+        return streams.filter((s) => liveIds.has(s.channelId));
+    }, [activeFilter, streams, programmes]);
 
     const tabs: { id: "streams" | "programmes"; label: string; kanji: string }[] = [
         { id: "streams", label: "Streams", kanji: "放送" },
@@ -134,8 +143,11 @@ export default function VideoPlayer({
             {activeTab === "programmes" && (
                 <ProgrammeTab
                     programmes={programmes}
-                    streams={streams}
+                    streams={displayStreams}
                     onSelectStream={handleProgrammeSelect}
+                    availableFilters={availableFilters}
+                    activeFilter={activeFilter}
+                    setActiveFilter={setActiveFilter}
                 />
             )}
 
@@ -149,7 +161,7 @@ export default function VideoPlayer({
                 }}>
                     {/* Stream list */}
                     <StreamList
-                        streams={streams}
+                        streams={displayStreams}
                         currentUrl={current?.url ?? null}
                         onSelect={setCurrent}
                     />
@@ -233,6 +245,7 @@ export default function VideoPlayer({
                         )}
                     </div>
                 </div>
+
             )}
 
             {/* Pulse keyframe */}

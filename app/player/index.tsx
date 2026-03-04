@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { StreamItem, Programme } from "../types";
+import { StreamItem, AppData } from "../types";
 import VideoPlayer from "./videoPlayer";
 import { useVideoJs } from "./useVideoJS";
 
-export default function Main({ streams, programmes }: { streams: StreamItem[]; programmes: Programme[] }) {
+export default function Main({ streams, programmes, availableFilters }: Omit<AppData, 'channels'> ) {
 
     const [current, setCurrent] = useState<StreamItem | null>(null);
 
@@ -21,6 +21,7 @@ export default function Main({ streams, programmes }: { streams: StreamItem[]; p
             setCurrent={setCurrent}
             videoRef={videoRef}
             skip={skip}
+            availableFilters={availableFilters}
         />
     );
 }

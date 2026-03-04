@@ -6,6 +6,7 @@ import { XMLParser } from "fast-xml-parser";
 import type { AppData, Channel, Guide, Programme, Stream, StreamItem } from "../types";
 import { getUtcDateString, parseXmltvDate } from "../../lib/dates";
 import { log } from "@/lib/log";
+import { getAvailableFilters } from "../player/filters";
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
 
@@ -218,6 +219,9 @@ export default async function getAppData(): Promise<AppData> {
 
     const activeChannelIds = new Set(streams.map((s) => s.channelId));
     const programmes = await getCachedOrFreshEPG(activeChannelIds);
+    
+    log.info('generating available filters based on programmes')
+    const availableFilters = getAvailableFilters(programmes);
 
-    return { channels, streams, programmes };
+    return { channels, streams, programmes, availableFilters };
 }
