@@ -5,12 +5,13 @@
   "scripts": {
     "warm": "FORCE_REFRESH=true tsx scripts/warmData.ts",
     "generate:channels": "tsx scripts/generateChannelsXml.ts",
-    "docker:start": "docker compose -f docker/docker-compose.yml up -d",
+    "generate:channels:fresh": "FORCE_REFRESH=true tsx scripts/generateChannelsXml.ts",
+    "docker:start": "echo '🐳 Starting EPG docker service...' && docker compose -f docker/docker-compose.yml up -d",
     "docker:stop": "docker compose -f docker/docker-compose.yml down",
-    "dev:channels": "npm run generate:channels",
-    "dev:docker": "docker info > /dev/null 2>&1 && npm run docker:start && sleep 3 || echo '⚠️  Docker not running — EPG will be unavailable'",
-    "dev:warm": "npm run warm",
-    "dev:server": "next dev",
+    "dev:channels": "echo '📺 Generating channels.xml...' && npm run generate:channels",
+    "dev:docker": "docker info > /dev/null 2>&1 || open -a Docker; sleep 5 && npm run docker:start",
+    "dev:warm": "echo '🔥 Warming cache...' && npm run warm",
+    "dev:server": "echo '🚀 Starting App' && next dev",
     "dev": "npm run dev:channels && npm run dev:docker && npm run dev:warm && npm run dev:server"
   },
   "dependencies": {

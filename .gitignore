@@ -1,4 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#caches
+/scripts/generate-cache.json
+/app/data/epg-cache.json
+/app/data/streams-cache.json
+
+# generated
+/docker/programmes.xml
 
 # dependencies
 /node_modules

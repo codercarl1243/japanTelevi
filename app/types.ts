@@ -30,7 +30,8 @@ export type StreamItem = {
   streamTitle: string | null;
   url: string;
   status: string | null;
-  site_id: string;
+  site?: string | null;
+  site_id: string | null;
 };
 
 export type Programme = {

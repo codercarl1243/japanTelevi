@@ -21,7 +21,7 @@ export default function useStreamsController(
     filtered,
     query,
     setQuery,
-    current,
+    current: resolvedCurrent,
     setCurrent
   }
 }

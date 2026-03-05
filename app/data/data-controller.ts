@@ -1,12 +1,14 @@
 export const runtime = "nodejs";
 
-import fs from "fs/promises";
 import path from "path";
-import { XMLParser } from "fast-xml-parser";
 import type { AppData, Channel, Guide, Programme, Stream, StreamItem } from "../types";
 import { getUtcDateString, parseXmltvDate } from "../../lib/dates";
 import { log } from "@/lib/log";
 import { getAvailableFilters } from "../player/filters";
+import { isExtraChannel } from "./extraChannels";
+import { readJsonCache, writeJsonCache } from "@/lib/json";
+import { fileExists, readUTF8File } from "@/lib/files";
+import { parseXML } from "@/lib/xml";
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
 
@@ -14,32 +16,6 @@ const STREAMS_CACHE = path.join(process.cwd(), "app/data", "streams-cache.json")
 const EPG_CACHE = path.join(process.cwd(), "app/data", "epg-cache.json");
 const DOCKER_EPG_FILE = path.join(process.cwd(), "docker", "programmes.xml");
 
-
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
-async function fileExists(filePath: string) {
-    try {
-        await fs.access(filePath);
-        return true;
-    } catch {
-        return false;
-    }
-}
-
-async function readJsonCache<T>(filePath: string): Promise<T | null> {
-    try {
-        const file = await fs.readFile(filePath, "utf-8");
-        return JSON.parse(file) as T;
-    } catch {
-        return null;
-    }
-}
-
-async function writeJsonCache(filePath: string, data: unknown) {
-    const tmp = filePath + ".tmp";
-    await fs.writeFile(tmp, JSON.stringify(data, null, 2));
-    await fs.rename(tmp, filePath);
-}
 
 // ─── Streams ──────────────────────────────────────────────────────────────────
 
@@ -58,10 +34,14 @@ async function fetchStreams(): Promise<{ channels: Channel[]; streams: StreamIte
     const allStreams: Stream[] = await streamsRes.json();
     const allGuides: Guide[] = await guidesRes.json();
 
-    const jpChannels = allChannels.filter((c) => c.country === "JP" && !c.is_nsfw);
-    const channelNameById = new Map(jpChannels.map((c) => [c.id, c.name]));
+    const channels = allChannels.filter((c) => {
+        const isJapanese = c.country === "JP" && !c.is_nsfw;
+        const isExtra = isExtraChannel(c);
+        return isJapanese || isExtra;
+    });
+    const channelNameById = new Map(channels.map((c) => [c.id, c.name]));
 
-    const jpStreams = allStreams.filter(
+    const activeStreams = allStreams.filter(
         (s) =>
             s.channel &&
             channelNameById.has(s.channel) &&
@@ -71,18 +51,54 @@ async function fetchStreams(): Promise<{ channels: Channel[]; streams: StreamIte
 
     const guideMap = new Map(
         allGuides
-            .filter((g) => g.site === "tvguide.myjcom.jp" && g.channel)
-            .map((g) => [g.channel, g.site_id])
+            .filter((g) => g.channel)
+            .map((g) => [g.channel, { site: g.site, site_id: g.site_id }])
     );
 
     const activeChannelIds = new Set<string>();
     const enrichedStreams: StreamItem[] = [];
 
-    for (const s of jpStreams) {
-        if (!s.channel) continue;
-        const siteId = guideMap.get(s.channel);
+    const stats = {
+        noChannelId: 0,  // stream has no channel ID at all
+        notWantedChannel: 0,  // channel exists but is not in our JP/extra channel list
+        unsupportedFormat: 0,  // stream URL is not HLS/m3u8
+        noChannelName: 0,  // channel ID has no readable name
+        noGuideEntry: 0,  // channel has no EPG guide mapping
+        enriched: 0,  // successfully added to enriched streams
+    };
+
+
+    for (const s of activeStreams) {
+        if (!s.channel) {
+            stats.noChannelId++;
+            continue;
+        }
+        if (!channelNameById.has(s.channel)) {
+            stats.notWantedChannel++;
+            continue;
+        }
         const name = channelNameById.get(s.channel);
-        if (!siteId || !name) continue;
+        if (!name) {
+            stats.noChannelName++;
+            continue;
+        }
+
+        const isUnsupportedFormat =
+            !s.url?.toLowerCase().includes(".m3u8") &&
+            !s.url?.toLowerCase().includes("format=m3u8");
+
+        if (isUnsupportedFormat) {
+            stats.unsupportedFormat++;
+            continue;
+        }
+
+        const guide = guideMap.get(s.channel);
+
+        const siteId = guide?.site_id ?? null;
+        if (!siteId) {
+            stats.noGuideEntry++;
+        }
+        const site = guide?.site ?? null;
 
         if (!activeChannelIds.has(s.channel)) {
             activeChannelIds.add(s.channel);
@@ -93,14 +109,20 @@ async function fetchStreams(): Promise<{ channels: Channel[]; streams: StreamIte
                 streamTitle: s.title ?? null,
                 url: s.url,
                 status: s.status ?? null,
+                site,
                 site_id: siteId,
             });
+
+            stats.enriched++;
         }
     }
-    log.success(`Streams cached: ${enrichedStreams.length}`);
+    log.info("Stream enrichment stats:");
+    console.log("-----------------------------")
+    Object.entries(stats).forEach(([key, value]) => console.log(`${key}: ${value} `));
+    console.log("-----------------------------")
 
     return {
-        channels: jpChannels.filter((c) => activeChannelIds.has(c.id)),
+        channels: channels.filter((c) => activeChannelIds.has(c.id)),
         streams: enrichedStreams,
     };
 }
@@ -129,14 +151,13 @@ async function parseEPG(activeChannelIds: Set<string>): Promise<Programme[]> {
         throw new Error("Docker EPG file not found");
     }
 
-    const xml = await fs.readFile(DOCKER_EPG_FILE, "utf-8");
+    const xml = await readUTF8File(DOCKER_EPG_FILE);
 
     if (!xml || xml.length < 500) {
         throw new Error("EPG file too small — likely invalid");
     }
 
-    const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: "" });
-    const parsed = parser.parse(xml);
+    const parsed = parseXML(xml);
 
     if (!parsed?.tv?.programme?.length) {
         throw new Error("Invalid EPG structure");
@@ -192,7 +213,6 @@ async function getCachedOrFreshEPG(activeChannelIds: Set<string>): Promise<Progr
     }
 
     try {
-
         log.step(`EPG: parsing docker file`)
 
         const programmes = await parseEPG(activeChannelIds);
@@ -219,7 +239,7 @@ export default async function getAppData(): Promise<AppData> {
 
     const activeChannelIds = new Set(streams.map((s) => s.channelId));
     const programmes = await getCachedOrFreshEPG(activeChannelIds);
-    
+
     log.info('generating available filters based on programmes')
     const availableFilters = getAvailableFilters(programmes);
 
