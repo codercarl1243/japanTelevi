@@ -2,7 +2,7 @@ import { log } from "@/lib/log";
 import path from "path";
 import type { Channel, Guide, Stream, StreamItem } from "@/app/types";
 import { isExtraChannel, isExtraGuideSite } from "@/app/data/extraChannels";
-import { getUtcDateString } from "@/lib/dates";
+import { Dates } from "@/lib/dates";
 import { readJsonCache, writeJsonCache } from "@/lib/json";
 import { writeFile } from "@/lib/files";
 import { escapeXml } from "@/lib/xml";
@@ -141,7 +141,7 @@ async function fetchStreams(): Promise<StreamItem[]> {
 }
 
 async function getCachedOrFreshStreams(): Promise<StreamItem[]> {
-    const today = getUtcDateString();
+    const today = Dates.getUtcDateString();
     const cached = await readJsonCache<{ date: string; data: StreamItem[] }>(CACHE_FILE_PATH);
 
     const force = process.env.FORCE_REFRESH === "true";

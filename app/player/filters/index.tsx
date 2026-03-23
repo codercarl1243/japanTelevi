@@ -91,7 +91,9 @@ export function getLiveNow(programmes: Programme[]): Programme[] {
  * Get live programmes for a specific category.
  */
 export function getLiveByCategory(programmes: Programme[], key: FilterKey): Programme[] {
-  return filterByCategory(getLiveNow(programmes), key);
+  return getLiveNow(programmes);
+
+  // return filterByCategory(getLiveNow(programmes), key);
 }
 
 /**

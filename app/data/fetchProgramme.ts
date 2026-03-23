@@ -3,7 +3,7 @@ export const runtime = "nodejs";
 import fs from "fs/promises";
 import path from "path";
 import { XMLParser } from "fast-xml-parser";
-import { getUtcDateString, parseXmltvDate } from "../../lib/dates";
+import { Dates} from "../../lib/dates";
 
 const EPG_CACHE_FILE = path.join(
     process.cwd(),
@@ -71,8 +71,8 @@ async function fetchAndCacheEPG() {
             if (!p.start || !p.stop) return null;
             if (!activeChannelIds.has(p.channel)) return null;
 
-            const start = parseXmltvDate(p.start);
-            const stop = parseXmltvDate(p.stop);
+            const start = Dates.parseXmltvDate(p.start);
+            const stop = Dates.parseXmltvDate(p.stop);
 
             if (isNaN(start.getTime()) || isNaN(stop.getTime())) {
                 return null;
@@ -100,7 +100,7 @@ async function fetchAndCacheEPG() {
         }
 
         const simplified = {
-            date: getUtcDateString(),
+            date: Dates.getUtcDateString(),
             programmes,
         };
 
@@ -141,7 +141,7 @@ async function fetchAndCacheEPG() {
 
 
 export default async function getCachedOrFreshEPG() {
-    const today = getUtcDateString();
+    const today = Dates.getUtcDateString();
     let cached: any = null;
 
     try {

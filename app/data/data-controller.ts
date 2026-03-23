@@ -2,7 +2,7 @@ export const runtime = "nodejs";
 
 import path from "path";
 import type { AppData, Channel, Guide, Programme, Stream, StreamItem } from "../types";
-import { getUtcDateString, parseXmltvDate } from "../../lib/dates";
+import { Dates } from "../../lib/dates";
 import { log } from "@/lib/log";
 import { getAvailableFilters } from "../player/filters";
 import { isExtraChannel } from "./extraChannels";
@@ -128,7 +128,7 @@ async function fetchStreams(): Promise<{ channels: Channel[]; streams: StreamIte
 }
 
 async function getCachedOrFreshStreams() {
-    const today = getUtcDateString();
+    const today = Dates.getUtcDateString();
     const cached = await readJsonCache<{ date: string; data: { channels: Channel[]; streams: StreamItem[] } }>(STREAMS_CACHE);
 
     const force = process.env.FORCE_REFRESH === "true";
@@ -168,8 +168,8 @@ async function parseEPG(activeChannelIds: Set<string>): Promise<Programme[]> {
             if (!p.start || !p.stop) return null;
             if (!activeChannelIds.has(p.channel)) return null;
 
-            const start = parseXmltvDate(p.start);
-            const stop = parseXmltvDate(p.stop);
+            const start = Dates.parseXmltvDate(p.start);
+            const stop = Dates.parseXmltvDate(p.stop);
 
             if (isNaN(start.getTime()) || isNaN(stop.getTime())) return null;
 
@@ -202,7 +202,7 @@ function rehydrateProgrammes(programmes: any[]): Programme[] {
 }
 
 async function getCachedOrFreshEPG(activeChannelIds: Set<string>): Promise<Programme[]> {
-    const today = getUtcDateString();
+    const today = Dates.getUtcDateString();
     const cached = await readJsonCache<{ date: string; programmes: any[] }>(EPG_CACHE);
 
     const force = process.env.FORCE_REFRESH === "true";

@@ -4,6 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Programme, StreamItem } from "../../types";
+import { Dates } from "@/lib/dates";
 
 type Props = {
     programme: Programme;
@@ -31,8 +32,8 @@ export default function TooltipPortal({ programme, stream, anchorEl, onMouseEnte
         });
     }, [anchorEl]);
 
-    const start = programme.start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-    const stop = programme.stop.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const start = Dates.formatTime(programme.start);
+    const stop = Dates.formatTime(programme.stop);
 
     const tooltip = (
         <div
