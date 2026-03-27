@@ -21,14 +21,11 @@
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="HomeDramaChannel.jp"  site_id="120_141_65406">Home Drama Channel</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JidaigekiSenmonChannel.jp"  site_id="120_159_65406">Jidaigeki Senmon Channel</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOABDTV.jp"  site_id="2_1032_32737">JOAB-DTV</channel>
-  <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOAKDTV.jp"  site_id="2_1024_32736">JOAK-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOAXDTV.jp"  site_id="2_1040_32738">JOAX-DTV</channel>
-  <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOAYDTV.jp"  site_id="2_2072_32723">JOAY-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOBHDTV.jp"  site_id="2_41008_32118">JOBH-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOBKDTV.jp"  site_id="2_40960_32112">JOBK-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOCXDTV.jp"  site_id="2_1056_32740">JOCX-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JODXDTV.jp"  site_id="2_2080_32724">JODX-DTV</channel>
-  <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOEXDTV.jp"  site_id="2_1064_32741">JOEX-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOIXDTV.jp"  site_id="2_2088_32725">JOIX-DTV</channel>
   <channel  lang="ja" xmltv_id="JOMXDTV.jp" >JOMX-DTV</channel>
   <channel  site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOOYDTV.jp"  site_id="2_2064_32722">JOOY-DTV</channel>

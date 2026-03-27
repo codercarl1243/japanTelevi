@@ -14,8 +14,8 @@ export function useVideoJs(
         async function init() {
             const videojs = (await import("video.js")).default;
             // Register chromecast plugin
-            const chromecast = await import("@silvermine/videojs-chromecast");
-            chromecast.default(videojs, { preloadWebComponents: true });
+            // const chromecast = await import("@silvermine/videojs-chromecast");
+            // chromecast.default(videojs, { preloadWebComponents: true });
 
             if (!containerRef.current) return;
 
@@ -63,7 +63,7 @@ export function useVideoJs(
                         "seekToLive",
                         "remainingTimeDisplay",
                         "customControlSpacer",
-                        "ChromeCastButton",   // ← chromecast button in control bar
+                        // "ChromeCastButton",   // ← chromecast button in control bar
                         "fullscreenToggle",
                     ],
                 },
